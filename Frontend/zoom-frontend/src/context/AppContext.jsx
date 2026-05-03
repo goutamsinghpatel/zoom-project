@@ -1,11 +1,13 @@
 import { createContext } from "react";
 import axios from "axios";
 import { useState } from "react";
+import server from "../enviroment.js";
 
 export const Appcontext=createContext()
 export const AppContextProvider=(props)=>{
     axios.defaults.withCredentials=true;
-    const backendUrl="http://localhost:3000";
+    // const backendUrl="http://localhost:3000";
+    const backendUrl=server
     const [userData,setUserData]=useState("");
     const getHistoryOfUser = async () => {
         try {
