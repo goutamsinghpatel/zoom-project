@@ -1,0 +1,132 @@
+.ladingpagecontainer{
+  width:100vw;
+  height:100vh;
+  background:url("/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white; 
+}
+.ladingpagecontainer nav {
+  padding-inline: 1.5rem;
+  padding-block:1.6rem;
+  cursor: pointer;
+
+}
+.ladingpagecontainer nav h2{
+  font-size:1.8rem;
+  font-weight: 500;
+
+}
+.ladingpagecontainer nav{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+
+}
+
+.navlist{
+  display: flex;
+  gap:1.6rem;
+}
+.landingmaincontainer {
+   padding-inline: 1.5rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 25vh;
+   height: 70vh;
+  
+}
+
+
+.landingmaincontainer >div:nth-child(1) {
+ font-size: 2.2rem;
+}
+.landingmaincontainer >div:nth-child(1) div[role="button"]{
+  background:#D97500;
+  width:fit-content;
+  padding: 1rem;
+  margin-top:1.9rem;
+ border-radius: 20px;
+
+
+}
+.landingmaincontainer >div:nth-child(1) div[role="button"] a{
+  text-decoration: none;
+  color:white;
+  font-size:1.4rem;
+
+
+
+}
+
+.landingmaincontainer >div:nth-child(2) img {
+  height:80vh;
+  width: auto;
+}
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+
+}
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+}
+
+
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
+}
+
+/*  */
+@media (max-width: 768px) {
+
+  .landingmaincontainer {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 10vh;
+    height: auto;
+    gap: 2rem;
+  }
+
+  /* 👇 Image ko upar lao */
+  .landingmaincontainer > div:nth-child(2) {
+    order: 1;
+  }
+
+  /* 👇 Text + button niche */
+  .landingmaincontainer > div:nth-child(1) {
+    order: 2;
+    font-size: 1.5rem;
+  }
+
+  .landingmaincontainer > div:nth-child(1) div[role="button"] {
+    margin-inline: auto;
+  }
+
+  .landingmaincontainer > div:nth-child(2) img {
+    height: 45vh;
+  }
+} 
