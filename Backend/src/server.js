@@ -18,7 +18,7 @@ const port =3000;
 app.use(express.json({limit:"40kb"}));
 app.use(express.urlencoded({limit:"40kb",extended:true}))
 app.use(cookieParser());
-const allowdOrigin="http://localhost:5173"
+const allowdOrigin=["https://v-call-six.vercel.app","http://localhost:5173"]
 app.use(cors({origin:allowdOrigin,credentials:true}));
 app.use("/api/v1/users",userRouter);
 app.get("/",(req,res)=>{
